@@ -1,0 +1,193 @@
+$body-background: rgba(199, 195, 195, 0.521);
+$mtext-color: #000;
+$cal-bg: rgb(243, 240, 240);
+$cal-width: 25%;
+$cal-border: 9px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $body-background;
+    user-select: none;
+}
+
+#calculator_container {
+    margin: 0 auto;
+    margin-top: 30px;
+    background: $cal-bg;
+    width: $cal-width;
+    height: fit-content;
+    border-radius: $cal-border;
+    border: 0px;
+    padding: 5px;
+    box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+
+    .result_board {
+        width: 100%;
+        height: 130px;
+        background: rgba(199, 197, 197, 0.548);
+        border-radius: 9px 9px 0 0;
+        box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+    }
+
+    .styleit {
+        margin-top: 50px;
+        margin-right: 20px;
+        float: right;
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+    }
+
+    #keyboard {
+        width: 100%;
+        height: fit-content;
+        background: $cal-bg;
+        padding: 25px;
+        justify-content: center;
+
+        #kyb {
+            display: inline-flex;
+            justify-content: space-between;
+            width: 90%;
+
+            #operand {
+                justify-content: justify;
+                font-family: 'Poppins', sans-serif;
+                font-size: larger;
+                font-weight: bolder;
+                cursor: pointer;
+                background: rgba(228, 226, 226, 0.562);
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068)
+            }
+
+            #operand2 {
+                width: 50px;
+                height: 50px;
+                justify-content: justify;
+                font-family: 'Poppins', sans-serif;
+                font-size: larger;
+                font-weight: bolder;
+                cursor: pointer;
+                background: rgba(238, 50, 50, 0.548);
+                color: $cal-bg;
+                padding: 10px;
+                border-radius: 60%;
+                box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068)
+            }
+        }
+
+        .space {
+            margin-top: 35px;
+        }
+
+        #num {
+            justify-content: justify;
+            font-family: 'Poppins', sans-serif;
+            font-size: larger;
+            font-weight: bolder;
+            cursor: pointer;
+            background: transparent;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+        }
+    }
+}
+
+#operand:hover {
+    opacity: 0.6;
+    transform: scale(90%);
+}
+
+#operand2:hover {
+    opacity: 0.6;
+    transform: scale(90%);
+}
+
+#num:hover {
+    opacity: 0.6;
+    transform: scale(90%);
+}
+
+@media only screen and(max-width:640px) {
+    #calculator_container {
+        margin: 0 auto;
+        margin-top: 30px;
+        background: $cal-bg;
+        width: 90%;
+        height: fit-content;
+        border-radius: $cal-border;
+        border: 0px;
+        padding: 5px;
+        box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+
+        .result_board {
+            width: 100%;
+            height: 130px;
+            background: rgba(199, 197, 197, 0.548);
+            content: "";
+            border-radius: 9px 9px 0 0;
+            box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+        }
+
+        #keyboard {
+            width: 100%;
+            height: fit-content;
+            background: $cal-bg;
+            padding: 10px;
+            justify-content: center;
+
+            #kyb {
+                display: inline-flex;
+                justify-content: space-between;
+                width: 90%;
+
+                #operand {
+                    justify-content: justify;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: larger;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    background: rgba(228, 226, 226, 0.562);
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+
+                #operand2 {
+                    width: 45px;
+                    height: 45px;
+                    justify-content: justify;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: larger;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    background: rgba(238, 50, 50, 0.548);
+                    color: $cal-bg;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+            }
+
+            .space {
+                margin-top: 35px;
+            }
+
+            #num {
+                justify-content: justify;
+                font-family: 'Poppins', sans-serif;
+                font-size: larger;
+                font-weight: bolder;
+                cursor: pointer;
+                background: transparent;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

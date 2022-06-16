@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: rgba(199, 195, 195, 0.521);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#calculator_container {
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #f3f0f0;
+  width: 25%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 9px;
+  border: 0px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+          box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+}
+
+#calculator_container .result_board {
+  width: 100%;
+  height: 130px;
+  background: rgba(199, 197, 197, 0.548);
+  border-radius: 9px 9px 0 0;
+  -webkit-box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+          box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+}
+
+#calculator_container .styleit {
+  margin-top: 50px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+}
+
+#calculator_container #keyboard {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #f3f0f0;
+  padding: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#calculator_container #keyboard #kyb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+#calculator_container #keyboard #kyb #operand {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+  background: rgba(228, 226, 226, 0.562);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+          box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+}
+
+#calculator_container #keyboard #kyb #operand2 {
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+  background: rgba(238, 50, 50, 0.548);
+  color: #f3f0f0;
+  padding: 10px;
+  border-radius: 60%;
+  -webkit-box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+          box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+}
+
+#calculator_container #keyboard .space {
+  margin-top: 35px;
+}
+
+#calculator_container #keyboard #num {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+          box-shadow: 0 0 1px 1px rgba(102, 100, 100, 0.068);
+}
+
+#operand:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
+#operand2:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
+#num:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
+@media only screen and (max-width: 640px) {
+  #calculator_container {
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #f3f0f0;
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 9px;
+    border: 0px;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+            box-shadow: 0 0 1px 1px rgba(192, 189, 189, 0.829);
+  }
+  #calculator_container .result_board {
+    width: 100%;
+    height: 130px;
+    background: rgba(199, 197, 197, 0.548);
+    content: "";
+    border-radius: 9px 9px 0 0;
+    -webkit-box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+            box-shadow: 0 0 1px 1px rgba(219, 216, 216, 0.76);
+  }
+  #calculator_container #keyboard {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: #f3f0f0;
+    padding: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #calculator_container #keyboard #kyb {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+  }
+  #calculator_container #keyboard #kyb #operand {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    background: rgba(228, 226, 226, 0.562);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #calculator_container #keyboard #kyb #operand2 {
+    width: 45px;
+    height: 45px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    background: rgba(238, 50, 50, 0.548);
+    color: #f3f0f0;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  #calculator_container #keyboard .space {
+    margin-top: 35px;
+  }
+  #calculator_container #keyboard #num {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
